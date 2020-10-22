@@ -13,18 +13,19 @@ import './App.scss';
 const App = () => (
     <article className="App">
         <ScrollMagicDiv 
+            rootBackground= "black"
             scrollMagicItems={[{
                 triggerElement: 'sm0',
                 pin: true, 
                 duration: "1000",
                 triggerHook:'onLeave',
-                from:{ rotation: -360, scale: .35, y: '-35%', top: 0, paddingBottom: '0px', paddingTop:'0'},
+                from:{ rotation: -360, scale: .25, y: '-35%', top: 0, paddingBottom: '0px', paddingTop:'0'},
                 to: { rotation: 0, scale: 1, y: '0%', top: 0, paddingBottom: '0px', paddingTop:'700px',},
                 children: (
                     <Hero 
                         banner={<Image image={{ mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543347335168.jpg", desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031868126773435.jpg'}}/>}
                         title={<div>风格盛宴<br/>直击 <i>2020</i> 秋冬潮流趋势</div>}
-                        content="2020 年已然过半，在经历了漫长的沉寂与等待后，潮流灵感在秋冬季节被唤醒。撷取日常，贡献创意，引发思考，设计师们用作品和传统工艺对话，与现代风格交手，兼收并蓄，多面展现时尚的魅力，带领我们共同探寻潮流与生活的更多可能。"
+                        content="在经历了漫长的沉寂与等待后，潮流灵感在秋冬季节被唤醒。撷取日常、贡献创意、引发思考——设计师们用作品和传统工艺对话，与现代风格交手，兼收并蓄，多面展现时尚的魅力，带领我们共同探寻潮流与生活的更多可能。"
                     />
                 )
             }]}>
@@ -36,14 +37,14 @@ const App = () => (
                 scrollMagicItems={[{
                     triggerElement: 'sm1_1',
                     children:(<Image image={{mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543354896207.jpg', desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543337675609.jpg'}}/>),
-                    from: {rotation:3},
+                    from: {rotation:3, marginLeft:10, marginRight: 10},
                     to: {rotation:0},
                     duration: '300'
                 },
                 {
                     triggerElement: 'sm1_2',
                     children:(<Image image={{mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543343879889.jpg', desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543335755485.jpg'}}/>),
-                    from: {rotation:10},
+                    from: {rotation:10, marginLeft:10, marginRight: 10},
                     to: {rotation:0},
                     duration: '300'
                 }]}
@@ -60,9 +61,9 @@ const App = () => (
                             brand: 'JUUN.J',
                         },
                         {
-                            sku: 'JUUJK939PD6MFGYL',
-                            name: '多口袋连帽夹克',
-                            brand: 'JUUN.J',
+                            sku: 'QJXJK601933MFBKX',
+                            name: '饰扣带多口袋设计夹克',
+                            brand: 'MCQ',
                         },
                         {
                             sku: 'OFWJKPAJK10MCBKX',
@@ -70,9 +71,9 @@ const App = () => (
                             brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
                         },
                         {
-                            sku: 'OFWSTOG2715NFGRX',
-                            name: '饰口袋 logo 印花衬衫',
-                            brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
+                            sku: 'LAVVCTAW202MFGRX',
+                            name: '口袋装饰绗缝马甲',
+                            brand: 'LAVENHAM',
                         }
                     ]
                 }}
@@ -83,14 +84,14 @@ const App = () => (
                 scrollMagicItems={[{
                     triggerElement: 'sm2_1',
                     children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543328404636.jpg', mobile:'//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543354319192.jpg'}}/>),
-                    from: {rotation:3},
+                    from: {rotation:3, marginLeft:10, marginRight: 10},
                     to: {rotation:0},
                     duration: 300,
                 },
                 {
                     triggerElement: 'sm2_2',
                     children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543331884414.jpg', mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543357636988.jpg'}}/>),
-                    from: {rotation:-10},
+                    from: {rotation:-10, marginLeft:10, marginRight: 10},
                     to: {rotation:0},
                     duration: 300,
                 }]}
@@ -106,7 +107,7 @@ const App = () => (
                             brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
                         },
                         {
-                            sku: 'CPXCDAZN058X7GYX',
+                            sku: 'CPXCDAZN058X7NYX',
                             name: '爱心缝饰开衫',
                             brand: 'Play Comme des Garçons',
                         },
@@ -116,9 +117,9 @@ const App = () => (
                             brand: 'Acne Studios',
                         },
                         {
-                            sku: 'JLXCD752005MFGYX',
-                            name: '落肩设计针织开衫',
-                            brand: 'JIL SANDER',
+                            sku: 'QJXCD603760MFBLZ',
+                            name: '花朵嵌花针织开衫',
+                            brand: 'MCQ',
                         }
                     ]
                 }}
@@ -130,21 +131,21 @@ const App = () => (
                 scrollMagicItems={[{
                     triggerElement: 'sm3_1',
                     children:(<Image hideMobile={1} image={{ src: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543340367316.jpg'}}/>),
-                    from: {rotation:10},
+                    from: {rotation:10, marginLeft:10, marginRight: 10},
                     to: {rotation:0},
                     duration: 300
                 },
                 {
                     triggerElement: 'sm3_2',
                     children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543334481960.jpg', mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543346842474.jpg'}}/>),
-                    from: {rotation:20},
+                    from: {rotation:20, marginLeft:10, marginRight: 10},
                     to: {rotation:0},
                     duration: 300
                 },
                 {
                     triggerElement: 'sm3_3',
                     children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543331156081.jpg', mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543358006484.jpg'}}/>),
-                    from: {rotation:-20},
+                    from: {rotation:-20, marginLeft:10, marginRight: 10},
                     to: {rotation:0},
                     duration: 300
                 }]}
@@ -184,14 +185,14 @@ const App = () => (
                 scrollMagicItems={[{
                     triggerElement: 'sm4_1',
                     children:(<Image hideMobile={1} image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543332302262.jpg', mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543350479570.jpg'}}/>),
-                    from: {rotation:10},
+                    from: {rotation:10, marginLeft:10, marginRight: 10},
                     to: {rotation:0},
                     duration: 300
                 },
                 {
                     triggerElement: 'sm4_2',
                     children:(<Image image={{ src: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543341456173.jpg'}}/>),
-                    from: {rotation:-10},
+                    from: {rotation:-10, marginLeft:10, marginRight: 10},
                     to: {rotation:0},
                     duration: 300
                 }]}
@@ -202,9 +203,9 @@ const App = () => (
                     imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
                     lists: [
                         {
-                            sku: 'PMAPTBB0623MFBLZ',
-                            name: '条纹边饰格纹休闲裤',
-                            brand: 'Palm Angels',
+                            sku: 'ZVXOCCD0602HFGYX',
+                            name: 'Marlo 饰口袋格纹外套',
+                            brand: 'Zadig & Voltaire',
                         },
                         {
                             sku: 'OFWJKPB3611MFBKX',
@@ -212,9 +213,9 @@ const App = () => (
                             brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
                         },
                         {
-                            sku: 'JZXSTB00805MFBLX',
-                            name: '格纹拼接衬衫',
-                            brand: 'JUNYA WATANABE',
+                            sku: 'PMASTROGAHIMFYEX',
+                            name: '泼墨设计饰 logo 格纹衬衫',
+                            brand: 'Palm Angels',
                         },
                         {
                             sku: 'SUSHT332102XERDX',
@@ -226,20 +227,18 @@ const App = () => (
             />
             <ProductShow 
                 title="多变牛仔重塑风格" 
-                content="牛仔热潮一路从春夏延续到秋冬。除了水洗和褪色风格的单品外，玩味的解构设计势头强劲，原始状态下的简约丹宁也重磅回归，不同手法演绎多变风格，充分展现这一常青元素的独特魅力。
-                10:16
-                "
+                content="牛仔热潮从春夏延续到秋冬。除了水洗和褪色风格的单品外，玩味的解构设计势头强劲，原始状态下的简约丹宁也重磅回归，不同手法演绎多变风格，充分展现这一常青元素的独特魅力。"
                 scrollMagicItems={[{
                     triggerElement: 'sm5_1',
                     children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543335294199.jpg', mobile:'//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543344447054.jpg'}}/>),
-                    from: {rotation: -20},
+                    from: {rotation: -20, marginLeft:10, marginRight: 10},
                     to: {rotation:0},
                     duration: 300
                 },
                 {
                     triggerElement: 'sm5_2',
                     children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543328704059.jpg', mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543351224154.jpg'}}/>),
-                    from: {rotation: 10},
+                    from: {rotation: 10, marginLeft:10, marginRight: 10},
                     to: {rotation:0},
                     duration: 300
                 }]}
@@ -250,9 +249,9 @@ const App = () => (
                     imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
                     lists: [
                         {
-                            sku: 'ANXJKB90452MFBLX',
-                            name: '饰口袋直排扣牛仔夹克',
-                            brand: 'Acne Studios',
+                            sku: 'JUUJK64P10PMFBLX',
+                            name: '饰口袋水洗牛仔夹克',
+                            brand: 'JUUN.J',
                         },
                         {
                             sku: '0ZXJKM10004XENYX',
@@ -274,7 +273,7 @@ const App = () => (
             />
             <ShopAll 
                 cta={{
-                    link: "https://cn.iteshop.com/b_it/men/new-arrivals",
+                    link: "https://cn.iteshop.com/b_it/OCT-EDITORIAL-M",
                     content: '选购全部'
                 }}
             />  
