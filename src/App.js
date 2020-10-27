@@ -13,7 +13,7 @@ import './App.scss';
 const App = () => (
     <article className="App">
         <ScrollMagicDiv 
-            rootBackground= "black"
+            rootBackground= "#222"
             scrollMagicItems={[{
                 triggerElement: 'sm0',
                 pin: true, 
