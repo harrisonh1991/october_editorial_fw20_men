@@ -142,24 +142,24 @@ const App = () => (
                     imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
                     lists: [
                         {
-                            sku: 'OFWSNAR7712MFRDX',
-                            name: '箭头装饰拼色运动鞋',
+                            sku: 'ZVXOCCD0602HFGYX',
+                            name: 'Marlo 饰口袋格纹外套',
+                            brand: 'Zadig & Voltaire',
+                        },
+                        {
+                            sku: 'OFWJKPB3611MFBKX',
+                            name: '箭头缝饰格纹连帽夹克',
                             brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
                         },
                         {
-                            sku: '0ZXPTM152010ERDX',
-                            name: '老虎边饰休闲裤',
-                            brand: 'A BATHING APE®',
-                        },
-                        {
-                            sku: 'OFWSWDE2512MFRDX',
-                            name: '斜纹边饰卫衣',
-                            brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
-                        },
-                        {
-                            sku: 'PMACPCR0603MFRDX',
-                            name: 'Logo 刺绣棒球帽',
+                            sku: 'PMASTROGAHIMFYEX',
+                            name: '泼墨设计饰 logo 格纹衬衫',
                             brand: 'Palm Angels',
+                        },
+                        {
+                            sku: 'SUSHT332102XERDX',
+                            name: '饰标签格纹渔夫帽',
+                            brand: 'STUSSY',
                         }
                     ]
                 }}
@@ -189,24 +189,24 @@ const App = () => (
                     imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
                     lists: [
                         {
-                            sku: 'ZVXOCCD0602HFGYX',
-                            name: 'Marlo 饰口袋格纹外套',
-                            brand: 'Zadig & Voltaire',
-                        },
-                        {
-                            sku: 'OFWJKPB3611MFBKX',
-                            name: '箭头缝饰格纹连帽夹克',
+                            sku: 'OFWSNAR7712MFRDX',
+                            name: '箭头装饰拼色运动鞋',
                             brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
                         },
                         {
-                            sku: 'PMASTROGAHIMFYEX',
-                            name: '泼墨设计饰 logo 格纹衬衫',
-                            brand: 'Palm Angels',
+                            sku: '0ZXPTM152010ERDX',
+                            name: '老虎边饰休闲裤',
+                            brand: 'A BATHING APE®',
                         },
                         {
-                            sku: 'SUSHT332102XERDX',
-                            name: '饰标签格纹渔夫帽',
-                            brand: 'STUSSY',
+                            sku: 'OFWSWDE2512MFRDX',
+                            name: '斜纹边饰卫衣',
+                            brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
+                        },
+                        {
+                            sku: 'PMACPCR0603MFRDX',
+                            name: 'Logo 刺绣棒球帽',
+                            brand: 'Palm Angels',
                         }
                     ]
                 }}
