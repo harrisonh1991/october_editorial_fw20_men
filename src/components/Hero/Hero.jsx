@@ -1,9 +1,10 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import * as ScrollMagic from "scrollmagic";
 import styles from './styles/hero.module.scss';
 import Content from '../Content/content.jsx';
 import { TweenMax, TimelineMax, Sine } from "gsap";
+import { useMediaQuery } from 'react-responsive';
 
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
@@ -12,21 +13,28 @@ const Hero = props => {
     const { banner, title, content } = props;
     const containerRef = useRef(null);
 
+    let [desktopDevice, setDesktopDevice] = useState(useMediaQuery({
+        query: '(min-width: 1024px)'
+      }));
+
     let controller, tl;
 
     useEffect(() => {
-        controller = new ScrollMagic.Controller();
-        tl = new TimelineMax();
-        //tl.to(containerRef.current, 4, {rotation: 100, ease: Sine.Out });
+        console.log(desktopDevice);
+        if(desktopDevice) {
+            controller = new ScrollMagic.Controller();
+            tl = new TimelineMax();
+            //tl.to(containerRef.current, 4, {rotation: 100, ease: Sine.Out });
 
-        new ScrollMagic.Scene({
-            triggerElement: containerRef.current,
-            triggerHook: "onLeave",
-            duration: "100%",
-          })
-            .setPin(containerRef.current)
-            .on("progress", onPinScrollProgress)
-            .addTo(controller);
+            new ScrollMagic.Scene({
+                triggerElement: containerRef.current,
+                triggerHook: "onLeave",
+                duration: "100%",
+            })
+                .setPin(containerRef.current)
+                .on("progress", onPinScrollProgress)
+                .addTo(controller);
+        }
     }, []);
 
 
@@ -53,9 +61,10 @@ const Hero = props => {
         
     }
 
+    let defaultStyles = desktopDevice ? { transform: 'translate(0, -30%) scale(0.25)' } : {}
     return (
         <div className={styles.background}>
-            <header className={styles['header-position']} ref={containerRef} style={{ transform: 'translate(0, -30%) scale(0.25)' }}>
+            <header className={styles['header-position']} ref={containerRef} style={defaultStyles}>
                 <div className={styles.container}>
                     {banner}
                     <div className={styles.inner}>
