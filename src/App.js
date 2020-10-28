@@ -157,9 +157,9 @@ const App = () => (
                             brand: 'Palm Angels',
                         },
                         {
-                            sku: 'SUSHT332102XERDX',
-                            name: '饰标签格纹渔夫帽',
-                            brand: 'STUSSY',
+                            sku: 'TBECGB06741MFBKX',
+                            name: '饰 logo 千鸟格纹手拿包',
+                            brand: 'THOM BROWNE',
                         }
                     ]
                 }}
