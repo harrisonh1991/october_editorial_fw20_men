@@ -20,7 +20,6 @@ const Hero = props => {
     let controller, tl;
 
     useEffect(() => {
-        console.log(desktopDevice);
         if(desktopDevice) {
             controller = new ScrollMagic.Controller();
             tl = new TimelineMax();
@@ -41,9 +40,7 @@ const Hero = props => {
     function onPinScrollProgress(e) {
         let scaleProgress = ((e.progress / 0.8) * 0.75) + 0.25;
         let yProgress = (1 - (e.progress/ 0.8)) * 30;
-
         let progress = e.progress / 0.8;
-        console.log(scaleProgress.toFixed(2));
 
         if(progress > 1) {
             progress = 1;
