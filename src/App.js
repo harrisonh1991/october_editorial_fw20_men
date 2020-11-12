@@ -2,7 +2,6 @@ import React from 'react';
 import "core-js/stable";
 import "regenerator-runtime/runtime";
 import Hero from './components/Hero/Hero.jsx';
-import ScrollMagicDiv from './components/ScrollMagic/ScrollMagicDiv.jsx';
 import ProductShow from "./components/productShow/productShow.jsx";
 import Image from './components/Image/image.jsx';
 import RedirectBannerCta from './components/Redirect/redirectBannerCta.jsx';
@@ -12,24 +11,11 @@ import './App.scss';
 
 const App = () => (
     <article className="App">
-        <ScrollMagicDiv 
-            rootBackground= "black"
-            scrollMagicItems={[{
-                triggerElement: 'sm0',
-                pin: true, 
-                duration: "1000",
-                triggerHook:'onLeave',
-                from:{ rotation: -360, scale: .25, y: '-35%', top: 0, paddingBottom: '0px', paddingTop:'0'},
-                to: { rotation: 0, scale: 1, y: '0%', top: 0, paddingBottom: '0px', paddingTop:'700px',},
-                children: (
-                    <Hero 
-                        banner={<Image image={{ mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543347335168.jpg", desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031868126773435.jpg'}}/>}
-                        title={<div>风格盛宴<br/>直击 <i>2020</i> 秋冬潮流趋势</div>}
-                        content="在经历了漫长的沉寂与等待后，潮流灵感在秋冬季节被唤醒。撷取日常、贡献创意、引发思考——设计师们用作品和传统工艺对话，与现代风格交手，兼收并蓄，多面展现时尚的魅力，带领我们共同探寻潮流与生活的更多可能。"
-                    />
-                )
-            }]}>
-        </ScrollMagicDiv>
+        <Hero 
+            banner={<Image image={{ mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543347335168.jpg", desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031868126773435.jpg'}}/>}
+            title={<div>风格盛宴<br/>直击 <i>2020</i> 秋冬潮流趋势</div>}
+            content="在经历了漫长的沉寂与等待后，潮流灵感在秋冬季节被唤醒。撷取日常、贡献创意、引发思考——设计师们用作品和传统工艺对话，与现代风格交手，兼收并蓄，多面展现时尚的魅力，带领我们共同探寻潮流与生活的更多可能。"
+        />
         <main className="main">
             <ProductShow 
                 title="机能主义大行其道" 
@@ -156,24 +142,24 @@ const App = () => (
                     imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
                     lists: [
                         {
-                            sku: 'OFWSNAR7712MFRDX',
-                            name: '箭头装饰拼色运动鞋',
+                            sku: 'ZVXOCCD0602HFGYX',
+                            name: 'Marlo 饰口袋格纹外套',
+                            brand: 'Zadig & Voltaire',
+                        },
+                        {
+                            sku: 'OFWJKPB3611MFBKX',
+                            name: '箭头缝饰格纹连帽夹克',
                             brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
                         },
                         {
-                            sku: '0ZXPTM152010ERDX',
-                            name: '老虎边饰休闲裤',
-                            brand: 'A BATHING APE®',
-                        },
-                        {
-                            sku: 'OFWSWDE2512MFRDX',
-                            name: '斜纹边饰卫衣',
-                            brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
-                        },
-                        {
-                            sku: 'PMACPCR0603MFRDX',
-                            name: 'Logo 刺绣棒球帽',
+                            sku: 'PMASTROGAHIMFYEX',
+                            name: '泼墨设计饰 logo 格纹衬衫',
                             brand: 'Palm Angels',
+                        },
+                        {
+                            sku: 'TBECGB06741MFBKX',
+                            name: '饰 logo 千鸟格纹手拿包',
+                            brand: 'THOM BROWNE',
                         }
                     ]
                 }}
@@ -203,24 +189,24 @@ const App = () => (
                     imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
                     lists: [
                         {
-                            sku: 'ZVXOCCD0602HFGYX',
-                            name: 'Marlo 饰口袋格纹外套',
-                            brand: 'Zadig & Voltaire',
-                        },
-                        {
-                            sku: 'OFWJKPB3611MFBKX',
-                            name: '箭头缝饰格纹连帽夹克',
+                            sku: 'OFWSNAR7712MFRDX',
+                            name: '箭头装饰拼色运动鞋',
                             brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
                         },
                         {
-                            sku: 'PMASTROGAHIMFYEX',
-                            name: '泼墨设计饰 logo 格纹衬衫',
-                            brand: 'Palm Angels',
+                            sku: '0ZXPTM152010ERDX',
+                            name: '老虎边饰休闲裤',
+                            brand: 'A BATHING APE®',
                         },
                         {
-                            sku: 'SUSHT332102XERDX',
-                            name: '饰标签格纹渔夫帽',
-                            brand: 'STUSSY',
+                            sku: 'OFWSWDE2512MFRDX',
+                            name: '斜纹边饰卫衣',
+                            brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
+                        },
+                        {
+                            sku: 'PMACPCR0603MFRDX',
+                            name: 'Logo 刺绣棒球帽',
+                            brand: 'Palm Angels',
                         }
                     ]
                 }}
